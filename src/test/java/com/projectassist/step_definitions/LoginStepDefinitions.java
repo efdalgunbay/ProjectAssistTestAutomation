@@ -17,10 +17,32 @@ public class LoginStepDefinitions {
     RegisterPage registerPage=new RegisterPage();
 
 
-    @Given("Email Button Click")
-    public void email_button() {
+    @Given("Gmail Button Click")
+    public void gmail_button() {
        loginPage.emailButton.click();
        ReusableMethods.waitFor(3);
+
+    }
+
+
+    @Given("Mail field is filled")
+    public void emailfield_button() {
+
+    }
+
+
+    @Given("Password field is filled")
+    public void Password_field () {
+
+    }
+
+    @Given("Next Button Click")
+    public void nextButtonClick () {
+
+    }
+
+    @Given("Click the Sign In Button")
+    public void signButtonClick () {
 
     }
 

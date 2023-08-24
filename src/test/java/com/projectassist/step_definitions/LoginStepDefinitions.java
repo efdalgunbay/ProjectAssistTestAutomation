@@ -14,7 +14,6 @@ public class LoginStepDefinitions {
 
 
     LoginPage loginPage=new LoginPage();
-    RegisterPage registerPage=new RegisterPage();
 
 
     @Given("Gmail Button Click")
@@ -25,24 +24,35 @@ public class LoginStepDefinitions {
     }
 
 
-    @Given("Mail field is filled")
-    public void emailfield_button() {
+    @Given("Username field is filled")
+    public void userNameField_button() {
 
     }
 
 
     @Given("Password field is filled")
-    public void Password_field () {
+    public void password_field () {
 
     }
 
-    @Given("Next Button Click")
+
+    @Given("forward Button Click")
     public void nextButtonClick () {
 
     }
 
     @Given("Click the Sign In Button")
     public void signButtonClick () {
+
+    }
+
+    @Given("Click the Email No In Button")
+    public void emailNoClick () {
+
+    }
+
+    @Given("The Home page appears")
+    public void homePageAppears () {
 
     }
 

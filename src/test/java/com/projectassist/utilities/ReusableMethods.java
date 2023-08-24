@@ -252,9 +252,9 @@ public boolean verifyelementNotDisplayed(WebElement element){
         }
 }
 
-    public static void scrollDown(WebDriver driver)
+    public static void scrollDown()
     {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("window.scrollBy(0,350)", "");
     }
 
@@ -276,5 +276,12 @@ public boolean verifyelementNotDisplayed(WebElement element){
         return saltStr;
 
     }
+
+    public static void tab(){
+        ((JavascriptExecutor) Driver.getDriver()).executeScript("window.open()");
+        ((JavascriptExecutor) Driver.getDriver()).executeScript("window.open('https://google.com')");
+
+    }
+
 
 }

@@ -1,6 +1,6 @@
 package com.projectassist.pages;
 
-import com.Demo.utilities.Driver;
+import com.projectassist.utilities.Driver;
 import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {

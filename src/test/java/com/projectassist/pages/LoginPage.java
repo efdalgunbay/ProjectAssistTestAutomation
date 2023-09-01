@@ -11,7 +11,7 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//input[@type='email']")
     public WebElement userName;
 
-    @FindBy(id = "i0118")
+    @FindBy(xpath = "//input[@name='passwd']")
     public WebElement password;
 
     @FindBy(xpath = "//input[@type='submit']")
@@ -44,7 +44,8 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "(//span[@class='MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock'])[7]")
     public WebElement LogsHamburgerMenuButton;
 
-
+    @FindBy(id = "idBtn_Back")
+    public WebElement emailPopupNoButton;
 
 
 }

@@ -1,4 +1,6 @@
 package com.projectassist.step_definitions;
+
+import com.projectassist.pages.HomePage;
 import com.projectassist.utilities.ConfigReader;
 import com.projectassist.utilities.Driver;
 import com.projectassist.pages.LoginPage;
@@ -13,20 +15,21 @@ import java.util.ArrayList;
 
 public class LoginStepDefinitions {
 
-
-    LoginPage loginPage=new LoginPage();
+    HomePage homePage = new HomePage();
+    LoginPage loginPage = new LoginPage();
 
 
     @Given("Gmail Button Click")
     public void gmail_button() {
-       loginPage.emailButton.click();
-       ReusableMethods.waitFor(3);
+        loginPage.emailButton.click();
+        ReusableMethods.waitFor(3);
 
     }
+
     @Given("new tab is passed")
     public void TabisPassed() {
-      ReusableMethods.waitFor(2);
-      ReusableMethods.tabpassed();
+        ReusableMethods.waitFor(2);
+        ReusableMethods.tabpassed();
 
     }
 
@@ -40,14 +43,14 @@ public class LoginStepDefinitions {
 
     @Given("Username field is filled")
     public void userNameField_button() {
-        ReusableMethods.waitFor(30);
+        ReusableMethods.waitFor(3);
         loginPage.userName.sendKeys(ConfigReader.getProperty("username"));
         ReusableMethods.waitFor(3);
     }
 
 
     @Given("Password field is filled")
-    public void password_field () {
+    public void password_field() {
         loginPage.password.click();
         loginPage.password.sendKeys(ConfigReader.getProperty("password"));
         ReusableMethods.waitFor(3);
@@ -55,33 +58,33 @@ public class LoginStepDefinitions {
 
 
     @Given("forward Button Click")
-    public void nextButtonClick () {
+    public void nextButtonClick() {
         loginPage.forward.click();
         ReusableMethods.waitFor(3);
     }
 
     @Given("Click the Sign In Button")
-    public void signButtonClick () {
-    loginPage.singinbutton.click();
-    ReusableMethods.waitFor(2);
+    public void signButtonClick() {
+        loginPage.singinbutton.click();
+        ReusableMethods.waitFor(2);
     }
 
     @Given("Click the Email No In Button")
-    public void emailNoClick () {
+    public void emailNoClick() {
         loginPage.emailPopupNoButton.click();
 
     }
 
 
-
     @Given("The Home page appears")
-    public void homePageAppears () {
-
+    public void homePageAppears() {
+        ReusableMethods.waitFor(2);
+        homePage.homePageTitle.isDisplayed();
+        ReusableMethods.waitFor(2);
     }
 
 
-
-    }
+}
 
 
 

@@ -278,14 +278,16 @@ public boolean verifyelementNotDisplayed(WebElement element){
     }
 
     public static void tabpassed(){
-        ((JavascriptExecutor) Driver.getDriver()).executeScript("window.open()");
-        ((JavascriptExecutor) Driver.getDriver()).executeScript("window.open('https://login.microsoftonline.com/e475bd9d-951d-42f8-ba0c-1c929af85c12/oauth2/v2.0/authorize?response_type=id_token&scope=user.read%20user.read.all%20openid%20profile&client_id=61a6e444-2d6d-4efc-9a74-5fbe877f4b21&redirect_uri=https%3A%2F%2Fxtrflitetest.z20.web.core.windows.net%2Flogin&state=eyJpZCI6IjdhYWFlMjZjLWJhMzEtNDk2My1hOGExLTcxM2NmNGEyZTY0OCIsInRzIjoxNjkzNTc0Nzk4LCJtZXRob2QiOiJwb3B1cEludGVyYWN0aW9uIn0%3D&nonce=551f8133-6f02-49b4-a3a2-1ff079ade5c0&client_info=1&x-client-SKU=MSAL.JS&x-client-Ver=1.4.18&client-request-id=d9ba56be-9e24-4f6a-830e-99318937f63d&response_mode=fragment')");
+        ArrayList<String> tabs = new ArrayList<String>(Driver.getDriver().getWindowHandles());
+        Driver.getDriver().switchTo().window(tabs.get(0));
+        Driver.getDriver().get("https://login.microsoftonline.com/e475bd9d-951d-42f8-ba0c-1c929af85c12/oauth2/v2.0/authorize?response_type=id_token&scope=user.read%20user.read.all%20openid%20profile&client_id=61a6e444-2d6d-4efc-9a74-5fbe877f4b21&redirect_uri=https%3A%2F%2Fxtrflitetest.z20.web.core.windows.net%2Flogin&state=eyJpZCI6IjdhYWFlMjZjLWJhMzEtNDk2My1hOGExLTcxM2NmNGEyZTY0OCIsInRzIjoxNjkzNTc0Nzk4LCJtZXRob2QiOiJwb3B1cEludGVyYWN0aW9uIn0%3D&nonce=551f8133-6f02-49b4-a3a2-1ff079ade5c0&client_info=1&x-client-SKU=MSAL.JS&x-client-Ver=1.4.18&client-request-id=d9ba56be-9e24-4f6a-830e-99318937f63d&response_mode=fragment");
 
     }
 
     public static void tabpassedtwo(){
-        ((JavascriptExecutor) Driver.getDriver()).executeScript("window.open()");
-        ((JavascriptExecutor) Driver.getDriver()).executeScript("window.open('https://xtrflitetest.z20.web.core.windows.net/login')");
+        ArrayList<String> tabs = new ArrayList<String>(Driver.getDriver().getWindowHandles());
+        Driver.getDriver().switchTo().window(tabs.get(0));
+        Driver.getDriver().get("https://xtrflitetest.z20.web.core.windows.net/login");
 
     }
 

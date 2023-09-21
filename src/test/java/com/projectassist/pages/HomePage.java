@@ -39,7 +39,7 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[11]")
     public WebElement usersNavButton;
 
-    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[12]")
+    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[13]")
     public WebElement statsNavButton;
 
     @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[13]")

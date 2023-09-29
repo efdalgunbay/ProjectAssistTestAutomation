@@ -1,3 +1,4 @@
+@Reg
 Feature: Project Templates
 
   Background:

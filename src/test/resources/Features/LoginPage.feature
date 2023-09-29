@@ -1,3 +1,4 @@
+@Reg
 Feature: Login Page
 
   Background:

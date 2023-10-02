@@ -35,7 +35,17 @@ Feature: Project Templates
     And It is Seen that Sorting is Made According to Name
 
 
-
   Scenario: 5PR Checking Sorting By Update On Project Template Page
     And Click on the Update Field
     And It is Seen that Sorting is Made According to Update
+
+  Scenario: 6PR Checking Sorting By Updated At On Project Template Page
+
+
+  Scenario: 7PR Checking Sorting By Visibility On Project Template Page
+    And Click on the Visibility Field
+    And It is Seen that Sorting is Made According to Visibility
+
+  Scenario: 8PR Checking Filtering By Keyword On Project Template Page
+    And Keyword is entered in the Template name field on the Project Page
+    And You can see that the Project Page is sorted by keyword

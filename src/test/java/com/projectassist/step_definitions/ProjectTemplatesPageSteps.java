@@ -83,7 +83,28 @@ public class ProjectTemplatesPageSteps {
         ReusableMethods.waitFor(2);
     }
 
+    @Given("Click on the Visibility Field")
+    public void  theVisibilityField(){
+        projectTemplatesPage.visibilitySortingField.click();
+        ReusableMethods.waitFor(2);
+    }
+
+    @Given("It is Seen that Sorting is Made According to Visibility")
+    public void  madeAccordingToVisibility(){
+        projectTemplatesPage.visibilitySortingField.isEnabled();
+    }
+
+    @Given("Keyword is entered in the Template name field on the Project Page")
+    public void  nameFieldontheProjectPage(){
+        projectTemplatesPage.tamplateNameField.sendKeys(ConfigReader.getProperty("tamplate_name"));
+        ReusableMethods.waitFor(2);
+    }
 
 
+    @Given("You can see that the Project Page is sorted by keyword")
+    public void  projectPageSortedbyKeyword(){
+        projectTemplatesPage.tamplateNameSearchVerfy.isDisplayed();
+        ReusableMethods.waitFor(1);
+    }
 
 }

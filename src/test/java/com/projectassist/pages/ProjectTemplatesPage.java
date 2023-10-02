@@ -47,4 +47,19 @@ public class ProjectTemplatesPage extends BasePage{
     @FindBy(xpath = "(//p[contains(text(),'Jaime Zuniga')])[2]")
     public WebElement updateSortingVerfy;
 
+    @FindBy(xpath = "//div[contains(text(),'Visibility')]")
+    public WebElement visibilitySortingField;
+
+    @FindBy(xpath = "(//p[contains(text(),'Public (read only)')])[1]")
+    public WebElement visibilitySortingVerfy;
+
+    @FindBy(xpath = "//input[@placeholder='Filter template name']")
+    public WebElement TamplateNameField2;
+
+    @FindBy(xpath = "(//p[contains(text(),'Across Test')])[1]")
+    public WebElement tamplateNameSearchVerfy;
+
+
+
+
 }

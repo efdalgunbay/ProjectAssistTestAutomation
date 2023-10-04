@@ -21,28 +21,28 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[5]")
     public WebElement extraCustomFieldsConfigurationNavButton;
 
-    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[6]")
+    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[7]")
     public WebElement XTRFProjectsNavButton;
 
-    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[7]")
+    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[8]")
     public WebElement XTRFProjectsDeliveryCalendarNavButton;
 
-    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[8]")
+    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[9]")
     public WebElement memoQNavButton;
 
-    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[9]")
+    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[10]")
     public WebElement clientPreferredLanguagesNavButton;
 
-    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[10]")
+    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[12]")
     public WebElement integrationsNavButton;
 
-    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[11]")
+    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[13]")
     public WebElement usersNavButton;
 
-    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[13]")
+    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[14]")
     public WebElement statsNavButton;
 
-    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[13]")
+    @FindBy(xpath = "(//div[@class='MuiListItemText-root'])[15]")
     public WebElement logsNavButton;
 
 
